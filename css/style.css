@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+h1,
+h3 {
+  padding-bottom: 1.25rem;
+}
+
+p {
+  margin-bottom: 0.75rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.text-primary {
+  color: #86c448
+}
+
+.block {
+  width: 100%;
+  text-align: center;
+}
+
+.l-header {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.m-heading {
+  font-size: 2.5rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  background-color: #86c448;
+  color: #fff;
+  display: inline-block;
+  padding: 0.625rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-dark {
+  background-color: #333;
+  color: #fff;
+  display: block;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #578728;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.btn-dark:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1.5rem 0;
+}
+
+.py-2 {
+  padding: 2rem;
+}
+
+.py-3 {
+  padding: 3rem;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.bg-dark {
+  background-color: #333;
+  color: #fff;
+}
+
+.bg-primary {
+  background-color: #86c448;
+  color: #fff;
+}
+
+.list {
+  padding: 0.5rem 0;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+
+/* Navbar Styling */
+#navbar {
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  opacity: 0.95;
+  padding: 1rem;
+  z-index: 1;
+}
+
+#navbar .logo h1 {
+  padding-bottom: 0px;
+}
+
+#navbar .logo a {
+  color: #fff;
+}
+
+
+#navbar .nav-item ul {
+  display: flex;
+  align-items: center;
+}
+
+#navbar .nav-item ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar .nav-item ul li a:hover {
+  background-color: #86c448;
+  border-radius: 4px;
+}
+
+/* Showcase Styling */
+#showcase {
+  height: 100vh;
+  background: url('/img/showcase.jpg') center center/cover;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  padding: 0 2rem;
+  /* overlay */
+  position: absolute;
+  top: 65px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Section: What We Do */
+#what .info-box {
+  display: flex;
+  padding: 1rem;
+}
+
+#what .info-box .box {
+  flex: 1;
+  text-align: center;
+  margin-right: 0.625rem;
+  padding: 1.2rem;
+}
+
+#what .info-box .box i {
+  background-color: #86c448;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url('/img/people.jpg') no-repeat center center/cover;
+}
+
+/* Section: Our Client */
+#client .client-logo {
+  display: flex;
+}
+
+#client .client-logo img {
+  width: 60%;
+  margin: auto;
+  display: block;
+}
+
+/* Section: Contact Us */
+#contact {
+  display: flex;
+  padding-bottom: 0;
+}
+
+#contact .form-wrap {
+  flex: 1;
+}
+
+#contact .form-wrap .form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3125rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.5rem;
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.form-group textarea {
+  min-height: 6rem;
+}
+
+.form-group input:focus-visible,
+.form-group textarea:focus {
+  outline: none;
+  border: 1px solid #333;
+}
+
+#contact .map {
+  flex: 1;
+}
+
+/* Section: Footer Bottom  */
+#footer .container {
+  padding-bottom: 0px;
+}
+
+.bottomless {
+  margin-bottom: 0;
+}
